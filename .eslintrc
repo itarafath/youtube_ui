@@ -22,7 +22,7 @@
       }
     ],
     "react/no-unescaped-entities": 0,
-    //meaningfull name
+
     "prefer-const": 1,
     "comma-dangle": [
       "error",
@@ -35,9 +35,11 @@
       }
     ],
     "no-console": "off",
-    "arrow-parens": "off"
+    "arrow-parens": "off",
+    "react/prop-types": "off"
   },
   "env": {
-    "es6": true
+    "es6": true,
+    "node": true
   }
 }

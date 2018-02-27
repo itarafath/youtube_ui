@@ -23,19 +23,20 @@ const styles = StyleSheet.create({
 
 export default class VideoItem extends Component {
   render() {
-    const video = this.props.video;
+    const obj = {};
+    obj.video = this.props.video;
     return (
       <View style={styles.container}>
-        <Image source={{ uri: video.snippet.thumbnails.medium.url }} style={{ height: 200 }} />
+        <Image source={{ uri: obj.video.snippet.thumbnails.medium.url }} style={{ height: 200 }} />
         <View style={styles.descContainer}>
           <Image
             source={{ uri: 'https://randomuser.me/api/portraits/men/5.jpg' }}
             style={{ width: 50, height: 50, borderRadius: 25 }}
           />
           <View style={styles.videoDetails}>
-            <Text style={styles.videoTitle}>{video.snippet.title}</Text>
+            <Text style={styles.videoTitle}>{obj.video.snippet.title}</Text>
             <Text style={styles.videoStates}>
-              {`${video.snippet.channelTitle} · ${video.statistics.viewCount}`}
+              {`${obj.video.snippet.channelTitle} · ${obj.video.statistics.viewCount}`}
             </Text>
           </View>
           <Icon name="more-vert" size={20} />

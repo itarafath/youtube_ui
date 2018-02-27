@@ -67,8 +67,8 @@ export default class App extends Component {
         <View style={styles.body}>
           <FlatList
             data={data.items}
-            renderItem={video => <VideoItem video={video.item} />}
-            keyExtractor={item => item.id}
+            renderItem={(video) => <VideoItem video={video.item} />}
+            keyExtractor={(item) => item.id}
           />
         </View>
         <View style={styles.tabBar}>
