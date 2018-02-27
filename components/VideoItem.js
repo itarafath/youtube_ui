@@ -23,13 +23,13 @@ const styles = StyleSheet.create({
 
 export default class VideoItem extends Component {
   render() {
-    const { video } = this.props.hii;
+    const video = this.props.video;
     return (
       <View style={styles.container}>
         <Image source={{ uri: video.snippet.thumbnails.medium.url }} style={{ height: 200 }} />
         <View style={styles.descContainer}>
           <Image
-            source={{ uri: 'https://randomuser.me/api/portraits/men/1.jpg' }}
+            source={{ uri: 'https://randomuser.me/api/portraits/men/5.jpg' }}
             style={{ width: 50, height: 50, borderRadius: 25 }}
           />
           <View style={styles.videoDetails}>
